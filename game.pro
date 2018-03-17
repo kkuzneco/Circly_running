@@ -30,4 +30,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     redcircle.gif \
     blackbackgroung.jpg \
-    whitecurcle.png
+    whitecurcle.png \
+    back.jpg
