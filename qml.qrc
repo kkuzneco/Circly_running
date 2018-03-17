@@ -4,5 +4,6 @@
         <file>Menu.qml</file>
         <file>back.jpg</file>
         <file>Button.qml</file>
+        <file>wingame.qml</file>
     </qresource>
 </RCC>
