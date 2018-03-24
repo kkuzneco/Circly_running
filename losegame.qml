@@ -9,7 +9,7 @@ import QtQuick 2.0
 
         Image {
             id: back
-            source: "Фон для меню.jpg"
+            source: "background.jpg"
             width: 1000
             height: 800
         }
@@ -17,9 +17,27 @@ import QtQuick 2.0
             id: texttowin
             text: qsTr("You lose!")
             anchors.centerIn: parent
-            font.pointSize: 20
+            font.pointSize: 44
             color: "Pink"
         }
+
+        Button {
+            Image {
+                x: 350
+                y: 550
+                source: "Кнопка EXIT.png"
+                width: 300
+                height: 150
+                sourceSize.width: 0
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                   Qt.quit()
+                }
+            }
+          }
 
     }
 
