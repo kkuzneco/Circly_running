@@ -19,7 +19,7 @@ Window {
         anchors.fill: parent
         onGameStarted: {
             parent.state = "gameplay";
-            playMusic.play()
+        //    playMusic.play()
     }
     }
    Gameplay {

@@ -4,16 +4,12 @@ import QtQml 2.2
 
 Rectangle {
     id: gameplay
-
-    signal gameStopped
-
+    width: 1000
+    height: 800
+    color:"black"
  //   property int counter:0
-
-    Image {
-        id: fon
-        source: "blackbackground.jpg"
-        anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop
-    }
-
+Ball {
+   x:0
+   y:0
+ }
 }

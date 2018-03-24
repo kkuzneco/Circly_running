@@ -30,10 +30,10 @@ Rectangle
        MouseArea{
            anchors.fill: parent
             onClicked: {
-           }
-            // onClicked: menu.gameStarted()
+          menu.gameStarted()
         }
-}
+       }
+        }
         Button {
             Image {
                 source: "Кнопка EXIT.png"

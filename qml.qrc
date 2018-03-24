@@ -8,6 +8,7 @@
         <file>кнопка PLAY.png</file>
         <file>Кнопка EXIT.png</file>
         <file>Gameplay.qml</file>
-        <file>blackbackgroung.jpg</file>
+        <file>Ball.qml</file>
+        <file>whitecurcle.png</file>
     </qresource>
 </RCC>
