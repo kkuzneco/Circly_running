@@ -35,6 +35,24 @@ Rectangle
                 }
             }
        }
+
+        Button {
+
+            Image {
+                source: "Кнопка EXIT.png"
+                width: 300
+                height: 150
+            }
+            MouseArea{
+                height: 100
+                anchors.fill: parent
+                onClicked: {
+                    Qt.quit()
+                }
+            }
+       }
+
      }
+
 }
 
