@@ -25,11 +25,12 @@ Rectangle
             Image {
                 source: "кнопка PLAY.png"
                 width: 300
-                height: 100
+                height: 150
             }
-       MouseArea{
-           anchors.fill: parent
-            onClicked: {
+            MouseArea{
+                height: 100
+                anchors.fill: parent
+                onClicked: {
           menu.gameStarted()
         }
        }
@@ -38,10 +39,14 @@ Rectangle
             Image {
                 source: "Кнопка EXIT.png"
                 width: 300
-                height: 100
+                height: 150
             }
-       MouseArea{
-           anchors.fill: parent
+            MouseArea{
+                anchors.rightMargin: 0
+                anchors.bottomMargin: 0
+                anchors.leftMargin: 0
+                anchors.topMargin: -12
+                anchors.fill: parent
             onClicked: {
                 Qt.quit()
            }
