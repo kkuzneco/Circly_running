@@ -9,7 +9,7 @@ Rectangle
 
     Image {
         id: back
-        source: "back.jpg"
+        source: "Фон для меню.jpg"
         width: 1000
         height: 800
     }

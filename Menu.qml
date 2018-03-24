@@ -11,7 +11,7 @@ Rectangle
     signal gameStarted
     Image {
         id: back
-        source: "back.jpg"
+        source: "Фон для меню.jpg"
         width: 1000
         height: 800
     }
@@ -21,15 +21,28 @@ Rectangle
         spacing: 50
 
         Button {
-            text : "Play"
-             onClicked: menu.gameStarted()
+
+            visible: true
+            Image {
+                x: 0
+                y: 8
+                source: "кнопка PLAY.png"
+                width: 300
+                height: 100
+                opacity: 1
+            }
+            // onClicked: menu.gameStarted()
         }
 
         Button {
-         text:"Exit"
-         onClicked: {
-           Qt.quit()
-                }
+            Image {
+                source: "кнопка PLAY.png"
+                width: 300
+                height: 100
+            }
+//            parent.clicked(): {
+//                Qt.quit()
+//            }
   }
 
 }

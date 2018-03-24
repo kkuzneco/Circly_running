@@ -2,8 +2,9 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>Menu.qml</file>
-        <file>back.jpg</file>
         <file>Button.qml</file>
         <file>wingame.qml</file>
+        <file>Фон для меню.jpg</file>
+        <file>кнопка PLAY.png</file>
     </qresource>
 </RCC>
