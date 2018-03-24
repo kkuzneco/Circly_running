@@ -1,5 +1,25 @@
 import QtQuick 2.0
 
-Item {
 
-}
+    Rectangle
+    {
+        visible: true
+        width: 1000
+        height: 800
+
+        Image {
+            id: back
+            source: "Фон для меню.jpg"
+            width: 1000
+            height: 800
+        }
+        Text {
+            id: texttowin
+            text: qsTr("You lose!")
+            anchors.centerIn: parent
+            font.pointSize: 20
+            color: "Pink"
+        }
+
+    }
+
