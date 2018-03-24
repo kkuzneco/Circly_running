@@ -7,5 +7,7 @@
         <file>Фон для меню.jpg</file>
         <file>кнопка PLAY.png</file>
         <file>Кнопка EXIT.png</file>
+        <file>Gameplay.qml</file>
+        <file>blackbackgroung.jpg</file>
     </qresource>
 </RCC>
