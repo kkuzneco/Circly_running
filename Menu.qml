@@ -22,28 +22,32 @@ Rectangle
 
         Button {
 
-            visible: true
             Image {
-                x: 0
-                y: 8
                 source: "кнопка PLAY.png"
                 width: 300
                 height: 100
-                opacity: 1
             }
+       MouseArea{
+           anchors.fill: parent
+            onClicked: {
+           }
             // onClicked: menu.gameStarted()
         }
-
+}
         Button {
             Image {
-                source: "кнопка PLAY.png"
+                source: "Кнопка EXIT.png"
                 width: 300
                 height: 100
             }
-//            parent.clicked(): {
-//                Qt.quit()
-//            }
+       MouseArea{
+           anchors.fill: parent
+            onClicked: {
+                Qt.quit()
+           }
+       }
   }
 
 }
 }
+

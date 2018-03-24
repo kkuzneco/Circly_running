@@ -6,5 +6,6 @@
         <file>wingame.qml</file>
         <file>Фон для меню.jpg</file>
         <file>кнопка PLAY.png</file>
+        <file>Кнопка EXIT.png</file>
     </qresource>
 </RCC>
