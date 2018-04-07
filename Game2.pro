@@ -65,4 +65,7 @@ DISTFILES += \
 SUBDIRS += \
     Game2.pro
 
+HEADERS += \
+    check_position.h
+
 

@@ -1,17 +1,25 @@
 import QtQuick 2.0
-
-
-    Rectangle
+import QtQuick.Window 2.0
+import QtQml 2.2
+Rectangle
     {
+        id: losegame
         visible: true
         width: 1000
         height: 800
 
         Image {
             id: back
-            source: "LOSEGAME.jpg"
+            source: "background.jpg"
             width: 1000
             height: 800
+        }
+        Text {
+            id: texttowin
+            text: qsTr("You lose!")
+            anchors.centerIn: parent
+            font.pointSize: 44
+            color: "Pink"
         }
 
         Button {

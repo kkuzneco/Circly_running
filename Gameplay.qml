@@ -2,12 +2,13 @@ import QtQuick 2.0
 import QtQuick.Window 2.0
 import QtQml 2.2
 
+
 Rectangle {
     id: gameplay
     width: 1000
     height: 800
     color:"black"
- //   property int counter:0
+    signal gameLose
 Ball {
   id: hero
   color:"white"
@@ -58,6 +59,7 @@ Image{
     y:5
 }
 
+<<<<<<< Updated upstream
 Ball {
     x: 952
     y: 305
@@ -392,4 +394,20 @@ Ball {
     color: "#ff0000"
 }
 
+=======
+MouseArea{
+   anchors.fill: parent
+
+   hoverEnabled: true //"курсором" становится объект
+   cursorShape: Qt.BlankCursor //убирает курсор
+
+onPositionChanged: {
+    hero.x = mouseX-12
+    hero.y = mouseY-12
+//    if (hero.x < 0) //проверка выхода за границы
+//        gameplay.gameLose();
+}
+
+}
+>>>>>>> Stashed changes
 }

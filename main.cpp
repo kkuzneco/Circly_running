@@ -1,6 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-
+#include "check_position.h"
 int main(int argc, char *argv[])
 {
 #if defined(Q_OS_WIN)
