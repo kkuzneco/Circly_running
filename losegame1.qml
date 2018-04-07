@@ -9,16 +9,9 @@ import QtQuick 2.0
 
         Image {
             id: back
-            source: "background.jpg"
+            source: "LOSEGAME.jpg"
             width: 1000
             height: 800
-        }
-        Text {
-            id: texttowin
-            text: qsTr("You lose!")
-            anchors.centerIn: parent
-            font.pointSize: 44
-            color: "Pink"
         }
 
         Button {
