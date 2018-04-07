@@ -32,27 +32,27 @@ Rectangle
                 anchors.fill: parent
                 onClicked: {
           menu.gameStarted()
-        }
+                }
+            }
        }
-        }
+
         Button {
+
             Image {
                 source: "Кнопка EXIT.png"
                 width: 300
                 height: 150
             }
             MouseArea{
-                anchors.rightMargin: 0
-                anchors.bottomMargin: 0
-                anchors.leftMargin: 0
-                anchors.topMargin: -12
+                height: 100
                 anchors.fill: parent
-            onClicked: {
-                Qt.quit()
-           }
+                onClicked: {
+                    Qt.quit()
+                }
+            }
        }
-  }
 
-}
+     }
+
 }
 
