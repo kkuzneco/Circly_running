@@ -10,17 +10,9 @@ Rectangle
 
     Image {
         id: back
-        source: "background.jpg"
+        source: "WINGAME.jpg"
         width: 1000
         height: 800
-    }
-    Text {
-        id: texttowin
-        text: qsTr("You win!")
-        font.family: "Verdana"
-        anchors.centerIn: parent
-        font.pointSize: 50
-        color: "Pink"
     }
 
     Button {

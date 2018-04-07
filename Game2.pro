@@ -12,9 +12,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    main.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    qml.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -28,6 +30,39 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    background.jpg
+    background.jpg \
+    Game.odt \
+    Game2.pro.user \
+    background.jpg \
+    LOSEGAME.jpg \
+    WINGAME.jpg \
+    Фон для меню.jpg \
+    0.png \
+    1.png \
+    2.png \
+    3.png \
+    4.png \
+    5.png \
+    6.png \
+    7.png \
+    8.png \
+    9.png \
+    heart.png \
+    redcircly.png \
+    Звук вкл.png \
+    Звук выкл.png \
+    Кнопка EXIT.png \
+    кнопка PLAY.png \
+    drawing.svg \
+    Ball.qml \
+    Button.qml \
+    Gameplay.qml \
+    losegame1.qml \
+    main.qml \
+    Menu.qml \
+    wingame.qml
+
+SUBDIRS += \
+    Game2.pro
 
 
