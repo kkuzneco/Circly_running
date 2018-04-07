@@ -9,6 +9,6 @@
         <file>Кнопка EXIT.png</file>
         <file>Gameplay.qml</file>
         <file>Ball.qml</file>
-        <file>whitecurcle.png</file>
+        <file>heart.png</file>
     </qresource>
 </RCC>

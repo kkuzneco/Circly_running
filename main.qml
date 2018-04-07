@@ -25,27 +25,21 @@ Window {
    Gameplay {
             id: gameplay
             anchors.fill: parent
-           // onGameStopped: { parent.state = "menu"; playMusic.stop() }
+          //  onGameStopped: { parent.state = "menu"; playMusic.stop() }
         }
     states: [
         State {
             name: "menu"
             PropertyChanges { target: menu; visible: true }
             PropertyChanges { target: gameplay; visible: false }
-            PropertyChanges { target: settings; visible: false }
+
         },
         State {
             name: "gameplay"
             PropertyChanges { target: menu; visible: false }
             PropertyChanges { target: gameplay; visible: true }
-            PropertyChanges { target: settings; visible: false }
-        }/*,
-        State {
-            name: "settings2"
-            PropertyChanges { target: menu; visible: false }
-            PropertyChanges { target: gameplay; visible: false }
-            PropertyChanges { target: settings; visible: true }
-        }*/
+
+        }
     ]
 
     state: "menu"
