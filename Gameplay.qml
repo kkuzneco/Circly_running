@@ -59,7 +59,6 @@ Image{
     y:5
 }
 
-<<<<<<< Updated upstream
 Ball {
     x: 952
     y: 305
@@ -394,7 +393,6 @@ Ball {
     color: "#ff0000"
 }
 
-=======
 MouseArea{
    anchors.fill: parent
 
@@ -409,5 +407,4 @@ onPositionChanged: {
 }
 
 }
->>>>>>> Stashed changes
 }
