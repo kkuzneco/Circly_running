@@ -9,6 +9,7 @@ Rectangle {
     height: 800
     color:"black"
     signal gameLose
+    property int live: 3
 Ball {
   id: hero
   color:"white"
@@ -402,7 +403,12 @@ MouseArea{
 onPositionChanged: {
     hero.x = mouseX-12
     hero.y = mouseY-12
-//    if (hero.x < 0) //проверка выхода за границы
+//    if (hero.x < 0 && parent.live!=0) {//проверка выхода за границы
+//       parent.live--;
+//        hero.x = 0
+//        hero.y = parent.height-30
+//    }
+//    else if (parent.live == 0)
 //        gameplay.gameLose();
 }
 
