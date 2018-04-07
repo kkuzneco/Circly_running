@@ -10,7 +10,6 @@
         <file>Gameplay.qml</file>
         <file>Ball.qml</file>
         <file>heart.png</file>
-        <file>whitecurcle.png</file>
         <file>losegame1.qml</file>
     </qresource>
 </RCC>
