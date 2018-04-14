@@ -11,5 +11,6 @@
         <file>Ball.qml</file>
         <file>heart.png</file>
         <file>Losegame.qml</file>
+        <file>Block.qml</file>
     </qresource>
 </RCC>

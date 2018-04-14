@@ -59,10 +59,7 @@ DISTFILES += \
     Menu.qml \
     wingame.qml \
     Losegame.qml \
-    Losegame.jpg \
-    Losegame.jpg \
-    Фон для меню.jpg
-
+    Block.qml
 SUBDIRS += \
     Game2.pro
 

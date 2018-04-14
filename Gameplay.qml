@@ -3,6 +3,7 @@ import QtQuick.Window 2.0
 import QtQml 2.2
 
 
+
 Rectangle {
     id: gameplay
     width: 1000
@@ -17,6 +18,7 @@ Ball {
    y:parent.height-30
    width: 25
    height: 25
+
  }
 
 Ball {
@@ -44,12 +46,13 @@ Rectangle{
     width: 50
     height: 105
 }
-Rectangle{
-    color: "white"
+Block{
     x:0
     y:739
     width: 108
     height: 15
+
+
 }
 Image{
     width: 30
@@ -119,188 +122,188 @@ Ball {
     color: "#ff0000"
 }
 
-Rectangle {
+Block{
     x: 170
     y: 605
     width: 16
     height: 204
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 66
     y: 583
     width: 14
     height: 111
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block{
     x: 484
     y: 593
     width: 16
     height: 204
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 715
     y: 593
     width: 16
     height: 204
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 623
     y: 733
     width: 108
     height: 15
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 832
     y: 420
     width: 16
     height: 166
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 832
     y: 583
     width: 91
     height: 15
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 832
     y: 420
     width: 91
     height: 15
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 666
     y: 314
     width: 16
     height: 204
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 544
     y: 501
     width: 132
     height: 17
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 616
     y: 265
     width: 204
     height: 15
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 838
     y: 41
     width: 16
     height: 85
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block{
     x: 606
     y: 47
     width: 14
     height: 261
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 529
     y: 132
     width: 91
     height: 15
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 456
     y: 41
     width: 12
     height: 165
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 372
     y: 133
     width: 15
     height: 74
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 278
     y: 133
     width: 109
     height: 13
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 278
     y: 41
     width: 14
     height: 105
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 0
     y: 38
     width: 1002
     height: 10
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 0
     y: 173
     width: 80
     height: 15
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 0
     y: 264
     width: 272
     height: 16
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block{
     x: 257
     y: 265
     width: 15
     height: 106
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 409
     y: 314
     width: 13
     height: 204
-    color: "#ffffff"
+
 }
 
 Ball {
@@ -309,52 +312,52 @@ Ball {
     color: "#ff0000"
 }
 
-Rectangle {
+Block {
     x: 79
     y: 47
     width: 15
     height: 74
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 100
     y: 358
     width: 172
     height: 13
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 0
     y: 502
     width: 272
     height: 16
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 278
     y: 681
     width: 14
     height: 119
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 278
     y: 675
     width: 144
     height: 13
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 408
     y: 681
     width: 14
     height: 73
-    color: "#ffffff"
+
 }
 
 Ball {
@@ -363,28 +366,28 @@ Ball {
     color: "#ff0000"
 }
 
-Rectangle {
+Block {
     x: 806
     y: 207
     width: 14
     height: 73
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 729
     y: 200
     width: 91
     height: 15
-    color: "#ffffff"
+
 }
 
-Rectangle {
+Block {
     x: 729
     y: 142
     width: 14
     height: 73
-    color: "#ffffff"
+
 }
 
 Ball {
@@ -408,7 +411,11 @@ onPositionChanged: {
     }
     else if (parent.live == 0)
         gameplay.gameLose();
+
+       // if(hero.x === block.x )
+
 }
 
 }
+
 }

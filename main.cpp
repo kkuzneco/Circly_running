@@ -15,5 +15,13 @@ int main(int argc, char *argv[])
         return -1;
 
     return app.exec();
+    //QQuickView viewer;
+   // viewer.setSource(QUrl("./qml/main.qml"));
+   // viewer.show();
+
+   // MyClass myClass;
+   // QQuickItem* item = viewer.rootObject();
+   // QObject::connect(item, SIGNAL(buttonClicked()), &myClass, SLOT(mySlot()));
+   // QObject::connect(&myClass, SIGNAL(mySignal(QVariant)), item, SLOT(updateGUI(QVariant)));
 }
 
