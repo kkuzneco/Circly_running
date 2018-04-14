@@ -395,12 +395,23 @@ Ball {
     y: 314
     color: "#ff0000"
 }
+Text{
+    id: mylive
+    x: 948
+    text: qsTr(live.toString())
+    font.pointSize: 24
+    font.family: "Times New Roman"
+    y:0
+    width: 24
+    height: 35
+    color:"white"
+}
+
 
 MouseArea{
-   anchors.fill: parent
-   hoverEnabled: true //"курсором" становится объект
-   cursorShape: Qt.BlankCursor //убирает курсор
-
+  anchors.fill: parent
+hoverEnabled: true
+cursorShape: Qt.BlankCursor //убирает курсор
 onPositionChanged: {
     hero.x = mouseX-12
     hero.y = mouseY-12

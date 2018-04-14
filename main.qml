@@ -27,7 +27,8 @@ Window {
    Losegame {
        id: losegame
         anchors.fill: parent
-        onGotoMenu:{parent.state = "menu"}
+        onGotoMenu:{parent.state = "menu"
+        gameplay.live = 3}
    }
     states: [
         State {

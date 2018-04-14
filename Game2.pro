@@ -37,7 +37,6 @@ DISTFILES += \
     0.png \
     1.png \
     2.png \
-    3.png \
     4.png \
     5.png \
     6.png \
@@ -60,7 +59,9 @@ DISTFILES += \
     wingame.qml \
     Losegame.qml \
     Block.qml
+
 SUBDIRS += \
+    Game2.pro \
     Game2.pro
 
 HEADERS += \
