@@ -30,11 +30,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    background.jpg \
     Game.odt \
     Game2.pro.user \
-    background.jpg \
-    LOSEGAME.jpg \
     WINGAME.jpg \
     Фон для меню.jpg \
     0.png \
@@ -60,7 +57,11 @@ DISTFILES += \
     losegame1.qml \
     main.qml \
     Menu.qml \
-    wingame.qml
+    wingame.qml \
+    Losegame.qml \
+    Losegame.jpg \
+    Losegame.jpg \
+    Фон для меню.jpg
 
 SUBDIRS += \
     Game2.pro

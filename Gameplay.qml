@@ -17,7 +17,6 @@ Ball {
    y:parent.height-30
    width: 25
    height: 25
-
  }
 
 Ball {
@@ -396,20 +395,19 @@ Ball {
 
 MouseArea{
    anchors.fill: parent
-
    hoverEnabled: true //"курсором" становится объект
    cursorShape: Qt.BlankCursor //убирает курсор
 
 onPositionChanged: {
     hero.x = mouseX-12
     hero.y = mouseY-12
-//    if (hero.x < 0 && parent.live!=0) {//проверка выхода за границы
-//       parent.live--;
-//        hero.x = 0
-//        hero.y = parent.height-30
-//    }
-//    else if (parent.live == 0)
-//        gameplay.gameLose();
+    if (hero.x < 0 && parent.live!=0) {//проверка выхода за границы
+       parent.live--;
+        hero.x = 0
+        hero.y = parent.height-30
+    }
+    else if (parent.live == 0)
+        gameplay.gameLose();
 }
 
 }
