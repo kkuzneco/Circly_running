@@ -27,6 +27,13 @@ Ball {
    y:75
 }
 Ball {
+   color:"yellow"
+   x: 150
+   y:82
+   width: 18
+   height: 18
+}
+Ball {
    color:"red"
    x: 654
    y:148
@@ -423,10 +430,170 @@ onPositionChanged: {
     else if (parent.live == 0)
         gameplay.gameLose();
 
-       // if(hero.x === block.x )
+    // if(hero.x === block.x )
 
 }
 
+Ball {
+    x: 23
+    y: 80
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 424
+    y: 63
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 578
+    y: 75
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 374
+    y: 710
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 777
+    y: 233
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 652
+    y: 75
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 872
+    y: 471
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 608
+    y: 471
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 667
+    y: 767
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 595
+    y: 710
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 327
+    y: 627
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 8
+    y: 710
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 66
+    y: 542
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 113
+    y: 627
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 132
+    y: 433
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 407
+    y: 260
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 327
+    y: 164
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 966
+    y: 614
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+Ball {
+    x: 880
+    y: 746
+    width: 18
+    height: 18
+    color: "#ffff00"
+}
+
+}
+
+Ball {
+    x: 31
+    y: 321
+    width: 18
+    height: 18
+    color: "#ffff00"
 }
 
 }
