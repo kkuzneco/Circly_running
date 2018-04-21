@@ -13,6 +13,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
+    c-file.cpp
 
 
 RESOURCES += qml.qrc \
@@ -58,7 +59,8 @@ DISTFILES += \
     Menu.qml \
     wingame.qml \
     Losegame.qml \
-    Block.qml
+    Block.qml \
+    C-filecpp
 
 SUBDIRS += \
     Game2.pro \
