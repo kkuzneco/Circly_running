@@ -60,7 +60,8 @@ DISTFILES += \
     wingame.qml \
     Losegame.qml \
     Block.qml \
-    Кнопка MENU.png
+    Кнопка MENU.png \
+    Losegame.jpg
 
 
 SUBDIRS += \

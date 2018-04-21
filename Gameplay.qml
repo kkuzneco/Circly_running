@@ -621,15 +621,7 @@ Ball {
     color: "#ffff00"
 }
 
-if(hero.x === block1.x && parent.live!=0){
-    parent.live--
-    hero.x = 0
-    hero.y = parent.height-30
-    }
-       else if (parent.live == 0)
-             gameplay.gameLose();
 
-}
 
 Ball {
     x: 31
@@ -642,3 +634,4 @@ Ball {
 }
 
 
+}
