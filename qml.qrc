@@ -12,5 +12,6 @@
         <file>heart.png</file>
         <file>Losegame.qml</file>
         <file>Block.qml</file>
+        <file>Кнопка MENU.png</file>
     </qresource>
 </RCC>

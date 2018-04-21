@@ -31,18 +31,14 @@ Rectangle
         Button {
 
             Image {
-                x: 341
-                y: 514
+                x: 350
+                y: 527
                 width: 304
                 height: 153
                 source: "Кнопка EXIT.png"
 
             }
             MouseArea {
-                anchors.rightMargin: -345
-                anchors.bottomMargin: -559
-                anchors.leftMargin: 341
-                anchors.topMargin: 514
                 anchors.fill: parent
                 onClicked: {
                    Qt.quit()
@@ -50,21 +46,15 @@ Rectangle
             }
           }
         Button {
-            x: 350
-            y: 382
             Image {
-                x: -8
-                y: -25
-                source: "Кнопка EXIT.png"
+                x: 350 ///////////////////////////////////////////////ЕЁ НЕ ВИДНО!!!!!!!!!!!!!!!!!!!!!!!!!
+                y: 345
                 width: 300
-                height: 150
-            }
+                height: 153
+                z: 1
+                source: "Кнопка MENU.png"
 
             MouseArea {
-                y: 1
-                height: 101
-                hoverEnabled: false
-                z: 1
                 anchors.fill: parent
                 onClicked: {
                    losegame.gotoMenu()
@@ -74,3 +64,4 @@ Rectangle
           }
 }
     }
+}

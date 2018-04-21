@@ -60,7 +60,8 @@ DISTFILES += \
     wingame.qml \
     Losegame.qml \
     Block.qml \
-    C-filecpp
+    Кнопка MENU.png
+
 
 SUBDIRS += \
     Game2.pro \

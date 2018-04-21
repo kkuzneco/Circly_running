@@ -2,9 +2,8 @@ import QtQuick 2.0
 import QtQuick.Window 2.0
 import QtQml 2.2
 
-
-
 Rectangle {
+    property bool if_end: false
     id: gameplay
     width: 1000
     height: 800
@@ -25,8 +24,10 @@ Ball {
    color:"red"
    x: 100
    y:75
+
 }
 Ball {
+
    color:"yellow"
    x: 150
    y:82
@@ -34,6 +35,9 @@ Ball {
    height: 18
 }
 Ball {
+
+   id:enemy
+
    color:"red"
    x: 654
    y:148
@@ -53,7 +57,33 @@ Rectangle{
     width: 50
     height: 105
 }
+Timer{
+    id:tmr
+    property int timeout: 60
+    running: timeout > 0 && (parent.visible === true)
+    repeat: true
+    interval: 10
+    onTriggered: {
+       // change_enemy_position(*enemy.x, *enemy.y, block_pos1, block_pos2)
+        if(enemy.x<720&&!(if_end))
+         enemy.x+=5
+        else if(enemy.x>=720)
+         if_end = true
+
+        if (enemy.x>606&&if_end)
+            enemy.x-=5
+        else if(enemy.x<=606)
+            if_end = false
+
+
+//        for (var i = 0; i < ins.count; i++) {
+//            ins.objectAt(i).visible = false
+        }
+    }
+
+
 Block{
+    id:block1
     x:0
     y:739
     width: 108
@@ -218,6 +248,7 @@ Block {
 }
 
 Block {
+    id:wall_1
     x: 838
     y: 41
     width: 16
@@ -226,6 +257,7 @@ Block {
 }
 
 Block{
+    id:wall_0
     x: 606
     y: 47
     width: 14
@@ -390,6 +422,7 @@ Block {
 }
 
 Block {
+    id: wall_2
     x: 729
     y: 142
     width: 14
@@ -416,10 +449,11 @@ Text{
 
 
 MouseArea{
-  anchors.fill: parent
+anchors.fill: parent
 hoverEnabled: true
-cursorShape: Qt.BlankCursor //убирает курсор
+cursorShape: Qt.BlankCursor
 onPositionChanged: {
+
     hero.x = mouseX-12
     hero.y = mouseY-12
     if (hero.x < 0 && parent.live!=0) {//проверка выхода за границы
@@ -429,6 +463,7 @@ onPositionChanged: {
     }
     else if (parent.live == 0)
         gameplay.gameLose();
+
 
     // if(hero.x === block.x )
 
@@ -586,6 +621,14 @@ Ball {
     color: "#ffff00"
 }
 
+if(hero.x === block1.x && parent.live!=0){
+    parent.live--
+    hero.x = 0
+    hero.y = parent.height-30
+    }
+       else if (parent.live == 0)
+             gameplay.gameLose();
+
 }
 
 Ball {
@@ -597,3 +640,5 @@ Ball {
 }
 
 }
+
+
