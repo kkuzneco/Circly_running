@@ -13,5 +13,7 @@
         <file>Losegame.qml</file>
         <file>Block.qml</file>
         <file>Кнопка MENU.png</file>
+        <file>Losegame.jpg</file>
+        <file>WINGAME.jpg</file>
     </qresource>
 </RCC>

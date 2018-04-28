@@ -36,15 +36,6 @@ DISTFILES += \
     Game2.pro.user \
     WINGAME.jpg \
     Фон для меню.jpg \
-    0.png \
-    1.png \
-    2.png \
-    4.png \
-    5.png \
-    6.png \
-    7.png \
-    8.png \
-    9.png \
     heart.png \
     redcircly.png \
     Звук вкл.png \
@@ -62,7 +53,9 @@ DISTFILES += \
     Losegame.qml \
     Block.qml \
     Кнопка MENU.png \
-    Losegame.jpg
+    Losegame.jpg \
+    Losegame.jpg \
+    WINGAME.jpg
 
 
 SUBDIRS += \
