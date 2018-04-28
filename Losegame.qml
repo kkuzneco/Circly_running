@@ -12,22 +12,12 @@ Rectangle
         Image {
             x: 0
             y: 0
-            source: "Фон для меню.jpg"
+            source: "Losegame.jpg"
             width: 1000
             height: 800
             visible: true
 
-        Text {
-            id: texttowin
-            text: qsTr("You lost!")
-            font.family: "Times New Roman"
-            anchors.verticalCenterOffset: -159
-            anchors.horizontalCenterOffset: 17
-            anchors.centerIn: parent
-            font.pointSize: 100
-            color: "Red"
 
-        }
         Button {
 
             Image {
