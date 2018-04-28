@@ -54,9 +54,8 @@ DISTFILES += \
     Block.qml \
     Кнопка MENU.png \
     Losegame.jpg \
-    Losegame.jpg \
     WINGAME.jpg
-
+    Hello.qml
 
 SUBDIRS += \
     Game2.pro

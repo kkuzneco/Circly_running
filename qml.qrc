@@ -15,5 +15,7 @@
         <file>Кнопка MENU.png</file>
         <file>Losegame.jpg</file>
         <file>WINGAME.jpg</file>
+        <file>Hello.qml</file>
+
     </qresource>
 </RCC>
