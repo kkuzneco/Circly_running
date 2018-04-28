@@ -31,5 +31,5 @@ Rectangle
                Qt.quit()
             }
         }
-      }
+    }
 }

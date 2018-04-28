@@ -1,14 +1,14 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.0
 
-Rectangle
-{
+Rectangle{
+
     id: menu
     visible: true
     width: 1000
     height: 800
-
     signal gameStarted
+
     Image {
         id: back
         source: "Фон для меню.jpg"
@@ -21,23 +21,21 @@ Rectangle
         spacing: 50
 
         Button {
-
             Image {
                 source: "кнопка PLAY.png"
                 width: 300
                 height: 150
             }
-            MouseArea{
+            MouseArea {
                 height: 100
                 anchors.fill: parent
                 onClicked: {
-          menu.gameStarted()
+                    menu.gameStarted()
                 }
             }
-       }
+        }
 
         Button {
-
             Image {
                 source: "Кнопка EXIT.png"
                 width: 300
@@ -50,9 +48,7 @@ Rectangle
                     Qt.quit()
                 }
             }
-       }
-
-     }
-
+        }
+    }
 }
 

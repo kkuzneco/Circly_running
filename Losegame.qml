@@ -48,7 +48,6 @@ Rectangle{
                         losegame.gotoMenu()
                     }
                 }
-
             }
         }
     }
