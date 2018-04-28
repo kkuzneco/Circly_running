@@ -14,7 +14,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     c-file.cpp \
-    c-file.cpp
+    c-file.cpp \
+    library.cpp
 
 
 RESOURCES += qml.qrc \
@@ -62,6 +63,44 @@ SUBDIRS += \
     Game2.pro
 
 HEADERS += \
-    check_position.h
+    check_position.h \
+    library.h
+
+#         Если операционная система из семейства unix
+#        unix: {
+#                CONFIG (debug, debug|release) {
+#                        # Такое название имеет debug-версия библиотеки
+#                        TARGET = ComputerManagerd
+#                } else {
+#                        # А такое release-версия
+#                        TARGET = ComputerManager
+#                }
+#        } else {
+#                TARGET = $$qtLibraryTarget(ComputerManager)
+#        }
+#        VERSION = 1.0.0
+#        # Первый параметр необходим для сборки #библиотеки в linux (qmake, make all),
+#        # второй для сборки под остальными ОС.
+#        CONFIG += debug_and_release build_all
+#        # Указываем папки для объектных файлов. Для unix-подобных ОС это критично.
+#        # Если этого не сделать, то будет собираться только release версия библиотеки,
+#        # либо только отладочная. Связано это с тем, что файлы будут замещать друг друга.
+#        CONFIG (debug, debug|release) {
+#                OBJECTS_DIR = build/debug
+#        } else {
+#                OBJECTS_DIR = build/release
+#        }
+
+#     # Подключаем заголовочные файлы библиотеки
+#        INCLUDEPATH += Library
+#        CONFIG(debug, debug|release) {
+#            # Подключаем debug-версии библиотек для разных платформ
+#            win32: LIBS += -Llib -lLibraryd1
+#            unix: LIBS += -Llib -L. -lLibraryd -Wl,-rpath,lib -Wl,-rpath,.
+#        } else {
+#            # Подключаем release-версии библиотек для разных платформ
+#            win32: LIBS += -Llib -lLibrary1
+#            unix: LIBS += -Llib -L. -lLibrary -Wl,-rpath,lib -Wl,-rpath,.
+#        }
 
 
