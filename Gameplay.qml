@@ -416,7 +416,28 @@ Timer{
         y: 60
     }
 
-    Text {
+    Image {
+        x: 0
+        y: 0
+        height: 35
+        width: 35
+        source: "Монета.png"
+    }
+
+    Text{
+        id: coins
+        x: 40
+        y: 0
+        width: 24
+        height: 35
+        color:"white"
+        text: "0"
+        font.pointSize: 24
+        font.family: "Times New Roman"
+    }
+
+    Text{
+
         id: mylive
         x: 948
         text: qsTr(live.toString())
