@@ -44,7 +44,6 @@ DISTFILES += \
     Кнопка EXIT.png \
     кнопка PLAY.png \
     drawing.svg \
-    Ball.qml \
     Button.qml \
     Gameplay.qml \
     losegame1.qml \

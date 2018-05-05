@@ -24,11 +24,28 @@ Rectangle
             height: 150
             sourceSize.width: 0
         }
-
         MouseArea {
             anchors.fill: parent
             onClicked: {
                Qt.quit()
+            }
+        }
+    }
+
+
+    Button {
+        Image {
+            x: 350
+            y: 375
+            source: "Кнопка MENU.png"
+            width: 300
+            height: 150
+            sourceSize.width: 0
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                losegame.gotoMenu()
             }
         }
     }
