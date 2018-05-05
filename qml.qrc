@@ -15,5 +15,7 @@
         <file>Кнопка MENU.png</file>
         <file>Losegame.jpg</file>
         <file>WINGAME.jpg</file>
+        <file>Монета.png</file>
+        <file>Coin.qml</file>
     </qresource>
 </RCC>

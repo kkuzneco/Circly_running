@@ -409,6 +409,11 @@ Rectangle {
         color: "#ff0000"
     }
 
+    Coin {
+        x: 8
+        y: 60
+    }
+
     Text{
         id: mylive
         x: 948
@@ -439,5 +444,135 @@ Rectangle {
             else if (parent.live == 0)
                 gameplay.gameLose();
         }
+    }
+
+    Coin {
+        x: 240
+        y: 60
+    }
+
+    Coin {
+        x: 8
+        y: 233
+    }
+
+    Coin {
+        x: 182
+        y: 133
+    }
+
+    Coin {
+        x: 143
+        y: 292
+    }
+
+    Coin {
+        x: 16
+        y: 396
+    }
+
+    Coin {
+        x: 130
+        y: 637
+    }
+
+    Coin {
+        x: 17
+        y: 546
+    }
+
+    Coin {
+        x: 182
+        y: 449
+    }
+
+    Coin {
+        x: 320
+        y: 561
+    }
+
+    Coin {
+        x: 208
+        y: 751
+    }
+
+    Coin {
+        x: 367
+        y: 705
+    }
+
+    Coin {
+        x: 786
+        y: 739
+    }
+
+    Coin {
+        x: 535
+        y: 643
+    }
+
+    Coin {
+        x: 616
+        y: 770
+    }
+
+    Coin {
+        x: 638
+        y: 71
+    }
+
+    Coin {
+        x: 762
+        y: 231
+    }
+
+    Coin {
+        x: 562
+        y: 65
+    }
+
+    Coin {
+        x: 303
+        y: 96
+    }
+
+    Coin {
+        x: 711
+        y: 332
+    }
+
+    Coin {
+        x: 616
+        y: 455
+    }
+
+    Coin {
+        x: 936
+        y: 694
+    }
+
+    Coin {
+        x: 859
+        y: 455
+    }
+
+    Coin {
+        x: 408
+        y: 195
+    }
+
+    Coin {
+        x: 567
+        y: 158
+    }
+
+    Coin {
+        x: 880
+        y: 207
+    }
+
+    Coin {
+        x: 464
+        y: 346
     }
 }
