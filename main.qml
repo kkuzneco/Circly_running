@@ -21,7 +21,6 @@ Window {
    Gameplay {
             id: gameplay
             anchors.fill: parent
->>>>>>> Stashed changes
             onGameLose: { parent.state = "losegame" }
             onLoselive: {
                 gameplay.live--;
@@ -74,8 +73,6 @@ Window {
 
     ]
 
-
-        ]
         state: "menu"
     }
 }

@@ -16,6 +16,7 @@
         <file>Losegame.jpg</file>
         <file>WINGAME.jpg</file>
         <file>Hello.qml</file>
-
+        <file>Монета.png</file>
+        <file>Coin.qml</file>
     </qresource>
 </RCC>
