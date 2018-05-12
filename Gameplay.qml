@@ -9,6 +9,7 @@ Rectangle {
     height: 800
     color:"black"
     signal gameLose
+    signal gameWin
     signal loselive
     property int live: 3
     Ball {
@@ -47,6 +48,7 @@ Rectangle{
     height: 40
 }
 Rectangle{
+    id:end
     color: "#22eb22"
     x:952
     y:41
@@ -74,15 +76,19 @@ Timer{
                  hero.x=0
                  hero.y = parent.height-30
                  gameplay.loselive()
+       if (hero.x>=end.x&&hero.x<=(end.x+50)&&hero.y>=end.y&&hero.y<=end.y+105)
+                             {
+                     hero.x=0
+                     hero.y = parent.height-30
+                     gameplay.wingame()
                          }
 
                  }
 
     }
 
-
+}
     Block{
-        id:block1
         x:0
         y:739
         width: 108
@@ -579,4 +585,5 @@ Timer{
         y: 346
     }
 }
+
 

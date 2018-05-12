@@ -1,13 +1,13 @@
 import QtQuick 2.0
+import QtQuick.Window 2.0
+import QtQml 2.2
+Rectangle{
 
-
-Rectangle
-{
-    x: 0
+    signal gotoMenu
+    id: wingame
     visible: true
     width: 1000
     height: 800
-
     Image {
         id: back
         source: "WINGAME.jpg"
@@ -45,7 +45,7 @@ Rectangle
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                losegame.gotoMenu()
+                wingame.gotoMenu()
             }
         }
     }

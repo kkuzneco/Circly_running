@@ -14,12 +14,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     c-file.cpp \
-    c-file.cpp \
     library.cpp
 
 
-RESOURCES += qml.qrc \
-    qml.qrc
+RESOURCES += qml.qrc
+
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -49,7 +48,6 @@ DISTFILES += \
     losegame1.qml \
     main.qml \
     Menu.qml \
-    wingame.qml \
     Losegame.qml \
     Block.qml \
     Кнопка MENU.png \
@@ -57,7 +55,8 @@ DISTFILES += \
     WINGAME.jpg \
     Gameplay.qml \
     Coin.qml\
-    Hello.qml
+    Hello.qml \
+    Wingame.qml
 
 SUBDIRS += \
     Game2.pro
