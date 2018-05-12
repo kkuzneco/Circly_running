@@ -76,18 +76,19 @@ Timer{
                  hero.x=0
                  hero.y = parent.height-30
                  gameplay.loselive()
-       if (hero.x>=end.x&&hero.x<=(end.x+50)&&hero.y>=end.y&&hero.y<=end.y+105)
+        }
+       if (hero.x>=952&&hero.x<=(952+50)&&hero.y>=41 && hero.y<=41+105)
                              {
                      hero.x=0
                      hero.y = parent.height-30
-                     gameplay.wingame()
+                     gameplay.gameWin()
                          }
 
                  }
 
     }
 
-}
+
     Block{
         x:0
         y:739
