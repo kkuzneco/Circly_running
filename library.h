@@ -1,71 +1,60 @@
-#ifndef LIBRARY_H
-#define LIBRARY_H
-//#include <QMainWindow>
-//#include <QtDeclarative/QDeclarativeView>
-//#include <QGraphicsObject>
-#include <QtGui>
-//#include <QDeclarativeContext>
-#include <QObject>
-#include <list>
+//#ifndef LIBRARY_H
+//#define LIBRARY_H
+////#include <QMainWindow>
+////#include <QtDeclarative/QDeclarativeView>
+////#include <QGraphicsObject>
+//#include <QtGui>
+////#include <QDeclarativeContext>
+//#include <QObject>
+//#include <list>
 
-class Llibrary : public QObject
-{
-    Q_OBJECT
-  struct Point
-       {
-           int x, y;
-        };
-//  class Character
+//class Library : public QObject
+//{
+//    Q_OBJECT
+//public:
+//explicit Llibrary(QObject *parent = nullptr);
+
+//    struct Point
+//         {
+//             int x, y;
+//          };
+//  class Hero
 //  {
 //  public:
-//          /* Get states */
+
 //          int getCurLives();
 //          unsigned int getMaxLives();
-//          unsigned int getDamage();
-
-
-//          /* Character gets damage and health */
-
-//          /* Returns true, when character is alive
-//           * Returns false, when character is dead
-//           */
-//          //virtual bool takeDamage(unsigned int amountOfDamage);
-
+//          unsigned int getCurGold();
+//          unsigned int getMaxGold();
+//     //Hero(unsigned int amountOfMaxHealth, unsigned int amountofMaxGold);
 
 
 //  private:
-//          unsigned int maxLives;
-//          /* Current health */
+//         // unsigned int maxLives;
 //          int curLives;
-
-//  protected:
-//          /*Setting*/
-//          void setCurHealth(int amountOfCurHealth);
-//          void setMaxHealth(unsigned int amountOfMaxHealth);
-//          void setWeapon(Weapon* weapon);
-//  };
-//  class Hero: public Character
-//  {
-//  public:
-//      Hero(unsigned int amountOfMaxHealth, unsigned int maxLevel);
+//        //  unsigned int maxGold;
+//          int curGold;
+//          void setCurHealth(int amountOfCurLives);
+//          //void setMaxHealth(unsigned int amountOfMaxLives);
+//          void setCurGold(int amountOfGold);
 
 
-//      unsigned int getGold();
-//      bool takeGold(int amountOfGold);
-//     unsigned int getHeroicDamage();
-////    Level(int heroX, int heroY, unsigned int lives);
-
-//// Enemy* addEnemy(int x, int y);
-
-////       list <EnemyObject*> getListOfMonsters();
+// };
+//  class Enemy{
 
 
-public:
-    explicit Llibrary(QObject *parent = nullptr);
+//};
+//  class Game{
 
-signals:
+//  private:
 
-public slots:
-};
+//signals:
+////      signal loselife();
+////      signal gameWin();
+////      signal gameLose();
 
-#endif // LIBRARY_H
+
+//public slots:
+//};
+//};
+//#endif // LIBRARY_H
