@@ -1,8 +1,9 @@
 import QtQuick 2.0
 import QtQuick.Window 2.0
 import QtQml 2.2
-
+import checking1 1.0
 Rectangle {
+    property int money: 0
     property bool if_end: false
     id: gameplay
     width: 1000
@@ -47,12 +48,17 @@ Rectangle{
     height: 40
 }
 Rectangle{
-    color: "#22eb22"
+    id:exitgame
+    color: "#8b8b8b"
     x:952
     y:41
     width: 50
     height: 105
 }
+CheckingPosition{
+    id:check1
+}
+
 Timer{
     id:tmr
     property int timeout: 60
@@ -60,25 +66,23 @@ Timer{
     repeat: true
     interval: 10
     onTriggered: {
-        if(enemy.x<720&&!(if_end))//Передвижение врагов
-         enemy.x+=5               //
-        else if(enemy.x>=720) //
-         if_end = true //
+        if(check1.check_pos(hero.x, hero.y))
+        {
+            hero.x=10
+            hero.y = parent.height-30
+            gameplay.loselive()
+        }
+        if(check1.if_coin(hero.x, hero.y)){
+            money+=10;
+            coin2.visible = false
+        }
 
-        if (enemy.x>606&&if_end)  //
-            enemy.x-=5       //
-        else if(enemy.x<=606)  //
-            if_end = false    //
-        if (hero.x>=-25&&hero.x<=108&&hero.y>=739-25&&hero.y<=739+15)
-                         {
-                 hero.x=0
-                 hero.y = parent.height-30
-                 gameplay.loselive()
-                         }
-
-                 }
-
+        if(money>=10)
+            exitgame.color = "green"
+        else
+             exitgame.color = "gray"
     }
+}
 
 
     Block{
@@ -165,6 +169,7 @@ Timer{
     }
 
     Block {
+        id: b2
         x: 66
         y: 583
         width: 14
@@ -172,6 +177,7 @@ Timer{
     }
 
     Block{
+        id: b17
         x: 484
         y: 593
         width: 16
@@ -179,6 +185,7 @@ Timer{
     }
 
     Block {
+        id: b24
         x: 715
         y: 593
         width: 16
@@ -186,6 +193,7 @@ Timer{
     }
 
     Block {
+        id: b23
         x: 623
         y: 733
         width: 108
@@ -193,6 +201,7 @@ Timer{
     }
 
     Block {
+        id: b30
         x: 832
         y: 420
         width: 16
@@ -200,6 +209,7 @@ Timer{
     }
 
     Block {
+        id: b31
         x: 832
         y: 583
         width: 91
@@ -207,6 +217,7 @@ Timer{
     }
 
     Block {
+        id: b29
         x: 832
         y: 420
         width: 91
@@ -214,6 +225,7 @@ Timer{
     }
 
     Block {
+        id: b22
         x: 666
         y: 314
         width: 16
@@ -221,6 +233,7 @@ Timer{
     }
 
     Block {
+        id: b20
         x: 544
         y: 501
         width: 132
@@ -228,6 +241,7 @@ Timer{
     }
 
     Block {
+        id: b21
         x: 616
         y: 265
         width: 204
@@ -235,7 +249,7 @@ Timer{
     }
 
     Block {
-        id:wall_1
+        id:b28
         x: 838
         y: 41
         width: 16
@@ -243,7 +257,7 @@ Timer{
     }
 
     Block{
-        id:wall_0
+        id:b19
         x: 606
         y: 47
         width: 14
@@ -251,6 +265,7 @@ Timer{
     }
 
     Block {
+        id: b18
         x: 529
         y: 132
         width: 91
@@ -258,6 +273,7 @@ Timer{
     }
 
     Block {
+        id: b16
         x: 456
         y: 41
         width: 12
@@ -265,6 +281,7 @@ Timer{
     }
 
     Block {
+        id: b12
         x: 372
         y: 133
         width: 15
@@ -272,6 +289,7 @@ Timer{
     }
 
     Block {
+        id: b11
         x: 278
         y: 133
         width: 109
@@ -279,6 +297,7 @@ Timer{
     }
 
     Block {
+        id: b10
         x: 278
         y: 41
         width: 14
@@ -286,6 +305,7 @@ Timer{
     }
 
     Block {
+        id: b32
         x: 0
         y: 38
         width: 1002
@@ -293,6 +313,7 @@ Timer{
     }
 
     Block {
+        id: b8
         x: 0
         y: 173
         width: 80
@@ -300,6 +321,7 @@ Timer{
     }
 
     Block {
+        id: b7
         x: 0
         y: 264
         width: 272
@@ -307,6 +329,7 @@ Timer{
     }
 
     Block{
+        id: b6
         x: 257
         y: 265
         width: 15
@@ -314,6 +337,7 @@ Timer{
     }
 
     Block {
+        id: b5
         x: 409
         y: 314
         width: 13
@@ -327,6 +351,7 @@ Timer{
     }
 
     Block {
+        id: b9
         x: 79
         y: 47
         width: 15
@@ -334,6 +359,7 @@ Timer{
     }
 
     Block {
+        id: b4
         x: 100
         y: 358
         width: 172
@@ -341,6 +367,7 @@ Timer{
     }
 
     Block {
+        id: b3
         x: 0
         y: 502
         width: 272
@@ -348,6 +375,7 @@ Timer{
     }
 
     Block {
+        id: b13
         x: 278
         y: 681
         width: 14
@@ -355,6 +383,7 @@ Timer{
     }
 
     Block {
+        id: b14
         x: 278
         y: 675
         width: 144
@@ -362,6 +391,7 @@ Timer{
     }
 
     Block {
+        id: b15
         x: 408
         y: 681
         width: 14
@@ -375,6 +405,7 @@ Timer{
     }
 
     Block {
+        id: b25
         x: 806
         y: 207
         width: 14
@@ -382,6 +413,7 @@ Timer{
     }
 
     Block {
+        id: b26
         x: 729
         y: 200
         width: 91
@@ -389,7 +421,7 @@ Timer{
     }
 
     Block {
-        id: wall_2
+        id: b27
         x: 729
         y: 142
         width: 14
@@ -412,6 +444,7 @@ Timer{
    }
     }
     Coin {
+        id: coin2
         x: 8
         y: 60
     }
@@ -431,7 +464,7 @@ Timer{
         width: 24
         height: 35
         color:"white"
-        text: "0"
+        text: qsTr(money.toString())
         font.pointSize: 24
         font.family: "Times New Roman"
     }
@@ -450,6 +483,7 @@ Timer{
     }
 
     Coin {
+        id:coin1
         x: 240
         y: 60
     }
@@ -475,6 +509,7 @@ Timer{
     }
 
     Coin {
+        id: coin
         x: 130
         y: 637
     }
@@ -578,5 +613,6 @@ Timer{
         x: 464
         y: 346
     }
+
 }
 

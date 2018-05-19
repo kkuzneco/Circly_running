@@ -1,12 +1,15 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QtQml>
 #include "check_position.h"
+#include "checking1.h"
 int main(int argc, char *argv[])
 {
 #if defined(Q_OS_WIN)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
-
+    qmlRegisterType<CheckingPosition>
+            ("checking1",1,0,"CheckingPosition");
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
@@ -15,7 +18,10 @@ int main(int argc, char *argv[])
         return -1;
 
     return app.exec();
-    //QQuickView viewer;
+
+  //  a.exec;
+   // return 0;
+        //QQuickView viewer;
    // viewer.setSource(QUrl("./qml/main.qml"));
    // viewer.show();
 

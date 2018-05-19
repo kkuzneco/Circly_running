@@ -28,7 +28,7 @@ Rectangle{
 }
     Ball {
       color:"white"
-       x:0
+       x:10
        y:parent.height-30
        width: 25
        height: 25

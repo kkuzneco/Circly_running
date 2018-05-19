@@ -21,7 +21,9 @@ Window {
    Gameplay {
             id: gameplay
             anchors.fill: parent
-            onGameLose: { parent.state = "losegame" }
+            onGameLose: {
+                parent.state = "losegame"
+              }
             onLoselive: {
                 gameplay.live--;
                 if(gameplay.live!=0)
@@ -32,8 +34,11 @@ Window {
    Losegame {
        id: losegame
         anchors.fill: parent
-        onGotoMenu:{parent.state = "menu"
-        gameplay.live = 3}
+        onGotoMenu:{
+        gameplay.live = 3
+        gameplay.money = 0
+        parent.state = "menu"
+        }
    }
 
    Hello {

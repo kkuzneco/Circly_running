@@ -13,14 +13,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    c-file.cpp \
-    c-file.cpp \
-    library.cpp
+    library.cpp \
+    checking1.cpp \
 
 
-RESOURCES += qml.qrc \
-    qml.qrc
-
+RESOURCES += qml.qrc
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
@@ -64,8 +61,8 @@ SUBDIRS += \
 
 HEADERS += \
     check_position.h \
-    library.h
-
+    library.h \
+    checking1.h
 #         Если операционная система из семейства unix
 #        unix: {
 #                CONFIG (debug, debug|release) {
