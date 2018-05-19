@@ -29,6 +29,7 @@ Window {
                 if(gameplay.live!=0)
                 parent.state = "hello";
             else parent.state = "losegame" }
+            onGameWin: {parent.state = "wingame"}
         }
 
    Losegame {
@@ -41,6 +42,13 @@ Window {
         }
    }
 
+   Wingame {
+       id: wingame
+        anchors.fill: parent
+        onGotoMenu:{parent.state = "menu"
+          gameplay.live = 3
+       }
+   }
    Hello {
        anchors.fill: parent.Center
        id: hello
@@ -53,6 +61,7 @@ Window {
             PropertyChanges { target: gameplay; visible: false }
             PropertyChanges { target: losegame; visible: false }
             PropertyChanges { target: hello; visible: false}
+            PropertyChanges { target: wingame; visible: false }
         },
         State {
             name: "gameplay"
@@ -60,6 +69,7 @@ Window {
             PropertyChanges { target: gameplay; visible: true }
             PropertyChanges { target: losegame; visible: false }
              PropertyChanges { target: hello; visible: false}
+             PropertyChanges { target: wingame; visible: false }
         },
         State{
             name: "losegame"
@@ -67,6 +77,7 @@ Window {
             PropertyChanges { target: gameplay; visible: false }
             PropertyChanges { target: losegame; visible: true}
             PropertyChanges { target: hello; visible: false}
+            PropertyChanges { target: wingame; visible: false }
         },
         State{
             name: "hello"
@@ -74,7 +85,17 @@ Window {
             PropertyChanges { target: gameplay; visible: false}
             PropertyChanges { target: losegame; visible: false}
             PropertyChanges { target: hello; visible: true}
-        }
+            PropertyChanges { target: wingame; visible: false }
+
+        },
+         State{
+               name: "wingame"
+               PropertyChanges { target: menu; visible: false }
+               PropertyChanges { target: gameplay; visible: false }
+               PropertyChanges { target: losegame; visible: false}
+               PropertyChanges { target: hello; visible: false}
+               PropertyChanges { target: wingame; visible: true }
+           }
 
     ]
 

@@ -13,11 +13,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
+<<<<<<< HEAD
     library.cpp \
     checking1.cpp \
+=======
+    c-file.cpp \
+    library.cpp \
+    check_position.cpp
 
+>>>>>>> 3ae36a682a683a7cb67d2deb310db2d14a286b97
 
 RESOURCES += qml.qrc
+
+<<<<<<< HEAD
+RESOURCES += qml.qrc
+=======
+
+>>>>>>> 3ae36a682a683a7cb67d2deb310db2d14a286b97
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
@@ -46,7 +58,10 @@ DISTFILES += \
     losegame1.qml \
     main.qml \
     Menu.qml \
+<<<<<<< HEAD
     Wingame.qml \
+=======
+>>>>>>> 3ae36a682a683a7cb67d2deb310db2d14a286b97
     Losegame.qml \
     Block.qml \
     Кнопка MENU.png \
@@ -54,7 +69,8 @@ DISTFILES += \
     WINGAME.jpg \
     Gameplay.qml \
     Coin.qml\
-    Hello.qml
+    Hello.qml \
+    Wingame.qml
 
 SUBDIRS += \
     Game2.pro
@@ -62,7 +78,12 @@ SUBDIRS += \
 HEADERS += \
     check_position.h \
     library.h \
+<<<<<<< HEAD
     checking1.h
+=======
+    check_position.h
+
+>>>>>>> 3ae36a682a683a7cb67d2deb310db2d14a286b97
 #         Если операционная система из семейства unix
 #        unix: {
 #                CONFIG (debug, debug|release) {

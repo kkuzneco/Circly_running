@@ -10,6 +10,7 @@ Rectangle {
     height: 800
     color:"black"
     signal gameLose
+    signal gameWin
     signal loselive
     property int live: 3
     Ball {
@@ -86,7 +87,6 @@ Timer{
 
 
     Block{
-        id:block1
         x:0
         y:739
         width: 108
@@ -615,4 +615,5 @@ Timer{
     }
 
 }
+
 

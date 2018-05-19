@@ -3,7 +3,6 @@
         <file>main.qml</file>
         <file>Menu.qml</file>
         <file>Button.qml</file>
-        <file>wingame.qml</file>
         <file>Фон для меню.jpg</file>
         <file>кнопка PLAY.png</file>
         <file>Кнопка EXIT.png</file>
@@ -18,5 +17,6 @@
         <file>Hello.qml</file>
         <file>Монета.png</file>
         <file>Coin.qml</file>
+        <file>Wingame.qml</file>
     </qresource>
 </RCC>
