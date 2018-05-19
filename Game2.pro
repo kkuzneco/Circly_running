@@ -46,7 +46,7 @@ DISTFILES += \
     losegame1.qml \
     main.qml \
     Menu.qml \
-    wingame.qml \
+    Wingame.qml \
     Losegame.qml \
     Block.qml \
     Кнопка MENU.png \
