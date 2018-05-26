@@ -5,6 +5,7 @@ import checking1 1.0
 Rectangle {
     property int money: 0
     property bool if_end: false
+    property int seconds: 30
     id: gameplay
     width: 1000
     height: 800
@@ -62,8 +63,7 @@ CheckingPosition{
 
 Timer{
     id:tmr
-    property int timeout: 60
-    running: timeout > 0 && (parent.visible === true)
+    running: parent.visible === true
     repeat: true
     interval: 10
     onTriggered: {
@@ -83,9 +83,23 @@ Timer{
         else
              exitgame.color = "gray"
     }
+
 }
+Timer{
+    id: maintmr
+    interval: 1000
+    repeat:true
+    running: parent.visible === true
+    onTriggered:{
+        if (seconds == 0){
+                hero.x=10
+                hero.y = parent.height-30
+                gameplay.gameLose()
+        }
+         seconds --;
+    }
 
-
+}
     Block{
         x:0
         y:739
@@ -465,6 +479,17 @@ Timer{
         height: 35
         color:"white"
         text: qsTr(money.toString())
+        font.pointSize: 24
+        font.family: "Times New Roman"
+    }
+    Text  {
+        id: time
+        x: 373
+        y: 0
+        width: 24
+        height: 35
+        color:"white"
+        text: qsTr("Осталось "+ seconds.toString()+ " секунд!")
         font.pointSize: 24
         font.family: "Times New Roman"
     }

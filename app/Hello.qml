@@ -13,7 +13,7 @@ Rectangle{
         text: qsTr("Собери определенное количество монет, не задевая стены и врагов.
 Управляй мышкой.
 Чтобы продолжить
-НАЖМИ НА ШАРИК !")
+НАЖМИ НА РОЗОВЫЙ КРУГ !")
         anchors.verticalCenterOffset: 419
         anchors.horizontalCenterOffset: 493
         font.family: "Times New Roman"
@@ -32,13 +32,23 @@ Rectangle{
        y:parent.height-30
        width: 25
        height: 25
-       MouseArea{
+
+   Ball {
+      color:"pink"
+      x:7
+      y: 7
+      width: 10
+      height: 10
+      MouseArea{
+          anchors.rightMargin: 0
+          anchors.bottomMargin: -2
+          anchors.leftMargin: 0
+           anchors.topMargin: 2
            anchors.fill: parent
        onClicked:
            hello.begin()
     }
-
  }
- }
-
+}
+}
 

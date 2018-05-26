@@ -38,6 +38,7 @@ Window {
         onGotoMenu:{
         gameplay.live = 3
         gameplay.money = 0
+        gameplay.seconds = 30
         parent.state = "menu"
         }
    }
