@@ -3,6 +3,7 @@
 #include <QtQml>
 #include "check_position.h"
 #include "checking1.h"
+#include "check_enemies.h"
 int main(int argc, char *argv[])
 {
 #if defined(Q_OS_WIN)
@@ -10,6 +11,8 @@ int main(int argc, char *argv[])
 #endif
     qmlRegisterType<CheckingPosition>
             ("checking1",1,0,"CheckingPosition");
+    qmlRegisterType<CheckingPosition1>
+            ("check_enemies",1,0,"CheckingPosition1");
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;

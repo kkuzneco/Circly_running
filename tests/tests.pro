@@ -18,12 +18,14 @@ HEADERS +=\
 tests.h \
 ../app/check_position.h \
  ../app/library.h \
-  ../app/checking1.h
+  ../app/checking1.h\
+   ../app/check_enemies.h
 
 SOURCES +=     main.cpp \
     ../app/library.cpp \
     ../app/checking1.cpp \
-    ../app/check_position.cpp
+    ../app/check_position.cpp\
+    ../app/check_enemies.cpp
 
 INCLUDEPATH += ../app
 

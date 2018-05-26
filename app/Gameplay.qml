@@ -2,6 +2,7 @@ import QtQuick 2.0
 import QtQuick.Window 2.0
 import QtQml 2.2
 import checking1 1.0
+import check_enemies 1.0
 Rectangle {
     property int money: 0
     property bool if_end: false
@@ -60,6 +61,9 @@ Rectangle{
 CheckingPosition{
     id:check1
 }
+CheckingPosition1{
+    id:check_enemies
+}
 
 Timer{
     id:tmr
@@ -68,6 +72,12 @@ Timer{
     interval: 10
     onTriggered: {
         if(check1.check_pos(hero.x, hero.y))
+        {
+            hero.x=10
+            hero.y = parent.height-30
+            gameplay.loselive()
+        }
+        if(check_enemies.check_enm(hero.x, hero.y))
         {
             hero.x=10
             hero.y = parent.height-30

@@ -15,7 +15,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp \
     library.cpp \
     checking1.cpp \
-    check_position.cpp
+    check_position.cpp \
+    check_enemies.cpp
 
 RESOURCES += qml.qrc
 
@@ -63,7 +64,8 @@ SUBDIRS += \
 HEADERS += \
     check_position.h \
     library.h \
-    checking1.h
+    checking1.h \
+    check_enemies.h
 
 #         Если операционная система из семейства unix
 #        unix: {
