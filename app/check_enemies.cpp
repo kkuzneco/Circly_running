@@ -1,11 +1,10 @@
 #include "check_enemies.h"
 #include<QObject>
+#include<math.h>
 bool CheckingPosition1::check_enm(int X, int Y){
 
     for (int i = 0; i<33; i++)
-        if (X>=xen[i]-30&&X<=xen[i]+wen&&Y>=yen[i]-30&&Y<=yen[i]+hen)
+        if (sqrt((X-xen[i])*(X-xen[i])+(Y-yen[i])*(Y-yen[i]))<=25)
             return true;
-        else  if(X<0||Y<38||X+25>1000||Y+25>800)
-                return true;
-          return false;
+         return false;
 }
