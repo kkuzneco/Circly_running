@@ -3,6 +3,7 @@ include(gtest_dependency.pri)
 TEMPLATE = app
 CONFIG += console
 CONFIG += thread
+CONFIG += c++11
 
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 QMAKE_CFLAGS += -Wall -Wextra -Werror
