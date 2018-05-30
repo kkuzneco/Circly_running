@@ -13,9 +13,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    library.cpp \
     checking1.cpp \
-    check_position.cpp \
     check_enemies.cpp
 
 RESOURCES += qml.qrc
@@ -62,8 +60,6 @@ SUBDIRS += \
     Game2.pro
 
 HEADERS += \
-    check_position.h \
-    library.h \
     checking1.h \
     check_enemies.h
 

@@ -1,7 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QtQml>
-#include "check_position.h"
 #include "checking1.h"
 #include "check_enemies.h"
 int main(int argc, char *argv[])

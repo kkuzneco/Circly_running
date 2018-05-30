@@ -22,7 +22,7 @@ TEST(checkingblocks, test4){
   EXPECT_EQ(c1.check_pos(256,13), true);
 }
 TEST(checkingblocks, test5){
-  EXPECT_EQ(c1.check_pos(-200,-300), true);
+  EXPECT_EQ(c1.check_pos(125,719), false);
 }
 
 #endif
