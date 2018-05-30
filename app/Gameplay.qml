@@ -18,7 +18,8 @@ Rectangle {
     Ball {
         id: hero
         color:"white"
-        x:0
+        x:10
+        z: 1
         y:parent.height-30
         width: 25
         height: 25
@@ -89,9 +90,16 @@ Timer{
         }
 
         if(money>=10)
-            exitgame.color = "green"
+            if(hero.x > exitgame.x&& hero.y<exitgame.y+exitgame.height){
+                hero.x=10
+                hero.y = parent.height-30
+                gameplay.gameWin()
+            }
+            else
+                exitgame.color = "green"
         else
              exitgame.color = "gray"
+
     }
 
 }

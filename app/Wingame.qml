@@ -16,15 +16,21 @@ Rectangle{
     }
 
     Button {
+        x: 345
+        y: 546
         Image {
-            x: 350
-            y: 550
+            x: 0
+            y: -25
             source: "Кнопка EXIT.png"
             width: 300
             height: 150
             sourceSize.width: 0
         }
         MouseArea {
+            anchors.rightMargin: 0
+            anchors.bottomMargin: 0
+            anchors.leftMargin: 0
+            anchors.topMargin: 0
             anchors.fill: parent
             onClicked: {
                Qt.quit()
@@ -34,15 +40,21 @@ Rectangle{
 
 
     Button {
+        x: 345
+        y: 400
         Image {
-            x: 350
-            y: 375
+            x: -12
+            y: -22
             source: "Кнопка MENU.png"
             width: 300
             height: 150
             sourceSize.width: 0
         }
         MouseArea {
+            anchors.rightMargin: 9
+            anchors.bottomMargin: -13
+            anchors.leftMargin: -9
+            anchors.topMargin: 13
             anchors.fill: parent
             onClicked: {
                 wingame.gotoMenu()

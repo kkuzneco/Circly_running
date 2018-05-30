@@ -13,7 +13,7 @@ Rectangle{
         text: qsTr("Собери определенное количество монет, не задевая стены и врагов.
 Управляй мышкой.
 Чтобы продолжить
-НАЖМИ НА РОЗОВЫЙ КРУГ !")
+НАЖМИ НА ЗЕЛЁНЫЙ КРУГ !")
         anchors.verticalCenterOffset: 419
         anchors.horizontalCenterOffset: 493
         font.family: "Times New Roman"
@@ -34,7 +34,7 @@ Rectangle{
        height: 25
 
    Ball {
-      color:"pink"
+      color:"#24b521"
       x:7
       y: 7
       width: 10

@@ -46,8 +46,11 @@ Window {
    Wingame {
        id: wingame
         anchors.fill: parent
-        onGotoMenu:{parent.state = "menu"
+        onGotoMenu:{
+            parent.state = "menu"
           gameplay.live = 3
+            gameplay.money = 0
+            gameplay.seconds = 30
        }
    }
    Hello {
