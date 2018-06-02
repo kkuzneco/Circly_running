@@ -114,7 +114,6 @@ Timer{
             coin25.visible = true;
             coin26.visible = true;
             coin27.visible = true;
-            newgame = false;
         }
 
 
@@ -143,6 +142,7 @@ Timer{
         else
              exitgame.color = "gray"
         k = check1.if_coin(hero.x, hero.y, newgame);
+        newgame = false
         switch(k){
         case 0:
             money+=10;
