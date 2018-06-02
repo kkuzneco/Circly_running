@@ -11,7 +11,7 @@ script:
   - ./tests/tests
 
 after_success:
-  - coveralls --root . -E ".*external.*"
+  - coveralls --root . -E ".*external.*" -E "moc_.*"
 
 notifications:
 email: false
