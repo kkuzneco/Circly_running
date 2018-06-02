@@ -19,7 +19,13 @@ HEADERS +=\
 tests.h \
   ../app/checking1.h\
    ../app/check_enemies.h \
-    test1.h
+    test1.h \
+    ../app/tests2.h \
+    ../app/tests2.h \
+    tests2.h \
+    tests2.h \
+    tests2.h \
+    tests2.h
 
 SOURCES +=     main.cpp \
     ../app/checking1.cpp \
