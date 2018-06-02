@@ -6,7 +6,7 @@ import check_enemies 1.0
 Rectangle {
     property int money: 0
     property bool if_end: false
-    property int seconds: 30
+    property int seconds: 30    
     id: gameplay
     width: 1000
     height: 800
@@ -15,6 +15,7 @@ Rectangle {
     signal gameWin
     signal loselive
     property int live: 3
+    property int k: -1
     Ball {
         id: hero
         color:"white"
@@ -84,10 +85,10 @@ Timer{
             hero.y = parent.height-30
             gameplay.loselive()
         }
-        if(check1.if_coin(hero.x, hero.y)){
-            money+=10;
-            coin2.visible = false
-        }
+//        if(check1.if_coin(hero.x, hero.y)){
+//            money+=10;
+//            coin2.visible = false
+//        }
 
         if(money>=10)
             if(hero.x > exitgame.x&& hero.y<exitgame.y+exitgame.height){
@@ -99,7 +100,117 @@ Timer{
                 exitgame.color = "green"
         else
              exitgame.color = "gray"
-
+        k = check1.if_coin(hero.x, hero.y);
+        switch(k){
+        case 0:
+            money+=10;
+            coin1.visible = false;
+            break;
+        case 1:
+            money+=10;
+            coin2.visible = false;
+            break;
+        case 2:
+            money+=10;
+            coin3.visible = false;
+            break;
+    case 3:
+            money+=10;
+            coin4.visible = false;
+            break;
+    case 4:
+            money+=10;
+            coin5.visible = false;
+            break;
+    case 5:
+            money+=10;
+            coin6.visible = false;
+            break;
+    case 6:
+            money+=10;
+            coin7.visible = false;
+            break;
+    case 7:
+            money+=10;
+            coin8.visible = false;
+            break;
+    case 8:
+            money+=10;
+            coin9.visible = false;
+            break;
+    case 9:
+            money+=10;
+            coin10.visible = false;
+            break;
+    case 10:
+            money+=10;
+            coin11.visible = false;
+            break;
+    case 11:
+            money+=10;
+            coin12.visible = false;
+            break;
+    case 12:
+            money+=10;
+            coin13.visible = false;
+            break;
+    case 13:
+            money+=10;
+            coin14.visible = false;
+            break;
+    case 14:
+            money+=10;
+            coin15.visible = false;
+            break;
+    case 15:
+            money+=10;
+            coin16.visible = false;
+            break;
+    case 16:
+            money+=10;
+            coin17.visible = false;
+            break;
+    case 17:
+            money+=10;
+            coin18.visible = false;
+            break;
+    case 18:
+            money+=10;
+            coin19.visible = false;
+            break;
+    case 19:
+            money+=10;
+            coin20.visible = false;
+            break;
+    case 20:
+            money+=10;
+            coin21.visible = false;
+            break;
+    case 21:
+            money+=10;
+            coin22.visible = false;
+            break;
+    case 22:
+            money+=10;
+            coin23.visible = false;
+            break;
+    case 23:
+            money+=10;
+            coin24.visible = false;
+            break;
+    case 24:
+            money+=10;
+            coin25.visible = false;
+            break;
+    case 25:
+            money+=10;
+            coin26.visible = false;
+            break;
+    case 26:
+            money+=10;
+            coin27.visible = false;
+            break;
+        }
     }
 
 }
@@ -526,133 +637,157 @@ Timer{
     }
 
     Coin {
-        id:coin1
+        id:coin3
         x: 240
         y: 60
     }
 
     Coin {
+    id:coin4
         x: 8
         y: 233
     }
 
     Coin {
+    id:coin5
         x: 182
         y: 133
     }
 
     Coin {
+    id:coin6
         x: 143
         y: 292
     }
 
     Coin {
+    id:coin7
         x: 16
         y: 396
     }
 
     Coin {
-        id: coin
+        id: coin8
         x: 130
         y: 637
     }
 
     Coin {
+    id:coin1
         x: 17
         y: 546
     }
 
     Coin {
+    id:coin9
         x: 182
         y: 449
     }
 
     Coin {
+    id:coin10
         x: 320
         y: 561
     }
 
     Coin {
+    id:coin11
         x: 208
         y: 751
     }
 
     Coin {
+    id:coin12
         x: 367
         y: 705
     }
 
     Coin {
+    id:coin13
         x: 786
         y: 739
     }
 
     Coin {
+    id:coin14
         x: 535
         y: 643
     }
 
     Coin {
+    id:coin15
         x: 616
         y: 770
     }
 
     Coin {
+    id:coin16
         x: 638
         y: 71
     }
 
     Coin {
+    id:coin17
         x: 762
         y: 231
     }
 
     Coin {
+    id:coin18
         x: 562
         y: 65
     }
 
     Coin {
+    id:coin19
         x: 303
         y: 96
     }
 
     Coin {
+    id:coin20
         x: 711
         y: 332
     }
 
     Coin {
+    id:coin21
         x: 616
         y: 455
     }
 
     Coin {
+    id:coin22
         x: 936
         y: 694
     }
 
     Coin {
+    id:coin23
         x: 859
         y: 455
     }
 
     Coin {
+    id:coin24
         x: 408
         y: 195
     }
 
     Coin {
+    id:coin25
         x: 567
         y: 158
     }
 
     Coin {
+    id:coin26
         x: 880
         y: 207
     }
 
     Coin {
+    id:coin27
         x: 464
         y: 346
     }

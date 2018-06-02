@@ -14,7 +14,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     checking1.cpp \
-    check_enemies.cpp
+    check_enemies.cpp \
+    check_coins.cpp
 
 RESOURCES += qml.qrc
 
@@ -61,7 +62,8 @@ SUBDIRS += \
 
 HEADERS += \
     checking1.h \
-    check_enemies.h
+    check_enemies.h \
+    check_coins.h
 
 #         Если операционная система из семейства unix
 #        unix: {

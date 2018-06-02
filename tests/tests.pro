@@ -23,7 +23,8 @@ tests.h \
 
 SOURCES +=     main.cpp \
     ../app/checking1.cpp \
-    ../app/check_enemies.cpp
+    ../app/check_enemies.cpp \
+    ../app/check_coins.cpp
 
 INCLUDEPATH += ../app
 
