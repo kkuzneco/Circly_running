@@ -7,8 +7,9 @@ Rectangle{
     width: 1000
     height: 800
     color:"black"
+    z: 0
     Rectangle{
-    Text {
+        Text {
         id: texBal
         text: qsTr("Собери определенное количество монет, не задевая стены и врагов.
 Управляй мышкой.
@@ -26,29 +27,20 @@ Rectangle{
     border.color: "#cd74f0"
     visible:true
 }
-    Ball {
-      color:"white"
-       x:10
-       y:parent.height-30
-       width: 25
-       height: 25
+ Rectangle {
+        x: 8
+        y: 767
+        width: 25
+        height: 25
+        radius: 13
+        color: "#0cf70c"
 
-   Ball {
-      color:"#24b521"
-      x:7
-      y: 7
-      width: 10
-      height: 10
       MouseArea{
-          anchors.rightMargin: 0
-          anchors.bottomMargin: -2
-          anchors.leftMargin: 0
-           anchors.topMargin: 2
            anchors.fill: parent
        onClicked:
            hello.begin()
     }
  }
 }
-}
+
 

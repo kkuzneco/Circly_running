@@ -4,6 +4,8 @@ import QtQml 2.2
 import checking1 1.0
 import check_enemies 1.0
 Rectangle {
+
+
     property int money: 0
     property bool if_end: false
     property int seconds: 30    
@@ -16,11 +18,21 @@ Rectangle {
     signal loselive
     property int live: 3
     property int k: -1
-    Ball {
+    property bool newgame: true
+    Image{
+        id:back
+        source:"bfoto_ru_4303.jpg"
+        width: 1000
+        height: 800
+        opacity: 0.6
+
+    }
+    Rectangle {
         id: hero
         color:"white"
         x:10
         z: 1
+        radius:13
         y:parent.height-30
         width: 25
         height: 25
@@ -73,6 +85,39 @@ Timer{
     repeat: true
     interval: 10
     onTriggered: {
+        if(newgame){
+            coin1.visible = true;
+            coin2.visible = true;
+            coin3.visible = true;
+            coin4.visible = true;
+            coin5.visible = true;
+            coin6.visible = true;
+            coin7.visible = true;
+            coin8.visible = true;
+            coin8.visible = true;
+            coin9.visible = true;
+            coin10.visible = true;
+            coin11.visible = true;
+            coin12.visible = true;
+            coin13.visible = true;
+            coin14.visible = true;
+            coin15.visible = true;
+            coin16.visible = true;
+            coin17.visible = true;
+            coin18.visible = true;
+            coin19.visible = true;
+            coin20.visible = true;
+            coin21.visible = true;
+            coin22.visible = true;
+            coin23.visible = true;
+            coin24.visible = true;
+            coin25.visible = true;
+            coin26.visible = true;
+            coin27.visible = true;
+            newgame = false;
+        }
+
+
         if(check1.check_pos(hero.x, hero.y))
         {
             hero.x=10
@@ -85,12 +130,9 @@ Timer{
             hero.y = parent.height-30
             gameplay.loselive()
         }
-//        if(check1.if_coin(hero.x, hero.y)){
-//            money+=10;
-//            coin2.visible = false
-//        }
 
-        if(money>=10)
+
+        if(money>=160)
             if(hero.x > exitgame.x&& hero.y<exitgame.y+exitgame.height){
                 hero.x=10
                 hero.y = parent.height-30
@@ -100,7 +142,7 @@ Timer{
                 exitgame.color = "green"
         else
              exitgame.color = "gray"
-        k = check1.if_coin(hero.x, hero.y);
+        k = check1.if_coin(hero.x, hero.y, newgame);
         switch(k){
         case 0:
             money+=10;
@@ -214,6 +256,8 @@ Timer{
     }
 
 }
+
+
 Timer{
     id: maintmr
     interval: 1000
@@ -540,7 +584,6 @@ Timer{
         width: 14
         height: 73
     }
-
     Ball {
         x: 298
         y: 770

@@ -36,6 +36,7 @@ Window {
        id: losegame
         anchors.fill: parent
         onGotoMenu:{
+        gameplay.newgame = true
         gameplay.live = 3
         gameplay.money = 0
         gameplay.seconds = 30
@@ -47,8 +48,9 @@ Window {
        id: wingame
         anchors.fill: parent
         onGotoMenu:{
+            gameplay.newgame = true
             parent.state = "menu"
-          gameplay.live = 3
+            gameplay.live = 3
             gameplay.money = 0
             gameplay.seconds = 30
        }
