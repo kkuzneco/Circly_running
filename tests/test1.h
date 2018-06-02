@@ -13,7 +13,7 @@ TEST(checking_enemies, test1){
   SUCCEED();
 }
 TEST(checking_enemies, test2){
-  EXPECT_EQ(d1.check_enm(200,200), false);
+  EXPECT_EQ(d1.check_enm(200,200), true);
 }
 TEST(checking_enemies, test3){
   EXPECT_EQ(d1.check_enm(600,337), true);
