@@ -21,7 +21,5 @@ TEST(checking_enemies, test3){
 TEST(checking_enemies, test4){
   EXPECT_EQ(d1.check_enm(198,315), true);
 }
-TEST(checking_enemies, test5){
-  EXPECT_EQ(d1.check_enm(198,315), true);
-}
+
 #endif // TEST1_H
